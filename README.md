@@ -50,7 +50,7 @@ A full-stack web application for project and task management, featuring a Kanban
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/task-manager-php.git
+git clone https://github.com/giorg1s/task-manager-php.git
 ```
 
 **2. Move the project to the htdocs directory**
@@ -188,9 +188,9 @@ COMMENTS
 
 ## Author
 
-**Student:** [Your Name]
+**Student:** Giorgos Fyls
 **Institution:** SAEK
-**Year:** 2025
+**Year:** 2026
 **Project Type:** Full-Stack Web Development Capstone
 
 ---
