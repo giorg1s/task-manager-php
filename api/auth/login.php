@@ -2,6 +2,15 @@
 
 header("Content-Type: application/json");
 
+// Must match session_check.php exactly — same params = same cookie
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path'     => '/',
+    'secure'   => false,    // change to true in production (HTTPS)
+    'httponly' => true,
+    'samesite' => 'Strict'
+]);
+
 session_start();
 
 require "../config/db.php";
@@ -50,11 +59,11 @@ session_regenerate_id(true);
 $_SESSION["user_id"]       = $user["id"];
 $_SESSION["username"]      = $user["username"];
 $_SESSION["email"]         = $user["email"];
-$_SESSION["last_activity"] = time(); // track session timeout
+$_SESSION["last_activity"] = time();
 
 echo json_encode([
-    "message"  => "Login successful",
-    "user" => [
+    "message" => "Login successful",
+    "user"    => [
         "id"       => $user["id"],
         "username" => $user["username"],
         "email"    => $user["email"],

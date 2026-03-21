@@ -1,5 +1,7 @@
 <?php
 
+header("Content-Type: application/json");
+
 session_set_cookie_params([
     'lifetime' => 0,
     'path'     => '/',
@@ -29,3 +31,9 @@ if (isset($_SESSION["last_activity"]) && (time() - $_SESSION["last_activity"]) >
 
 // 3. Refresh activity timer
 $_SESSION["last_activity"] = time();
+
+// 4. Return authenticated user info
+echo json_encode([
+    "user_id"  => $_SESSION["user_id"],
+    "username" => $_SESSION["username"],
+]);

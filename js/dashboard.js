@@ -18,7 +18,7 @@
 
 (async () => {
   try {
-    const res = await fetch('api/auth/session_check.php', {
+    const res = await fetch('api/config/session_check.php', {
       credentials: 'same-origin',
     });
 
