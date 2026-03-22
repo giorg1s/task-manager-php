@@ -9,8 +9,8 @@
 ![Last commit](https://img.shields.io/github/last-commit/giorg1s/task-manager-php)
 ![GitHub stars](https://img.shields.io/github/stars/giorg1s/blackjack?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/giorg1s/blackjack?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/giorg1s/blackjack)
-![Top language](https://img.shields.io/github/languages/top/giorg1s/blackjack)
+![GitHub repo size](https://img.shields.io/github/repo-size/giorg1s/task-manager-php)
+![Top language](https://img.shields.io/github/languages/top/giorg1s/task-manager-php)
 
 A full-stack web application for project and task management, featuring a Kanban board interface. Developed as a capstone project at SAEK (Vocational Training Institute).
 
