@@ -290,16 +290,16 @@ async function toggleTask(checkboxEl) {
 
 /* ── 7. SIDEBAR TOGGLE ─────────────────────────────────────── */
 //
-// Δύο modes ανάλογα με το viewport:
+// Two modes according to the viewport:
 //
 //  Desktop/Tablet (≥ 768px):
-//    Toggle body.sidebar-collapsed → CSS Grid αλλάζει πλάτος.
-//    Preference αποθηκεύεται στο localStorage.
+//    Toggle body.sidebar-collapsed → CSS Grid changes width.
+//    Preference is saved in localStorage.
 //
 //  Mobile (< 768px):
-//    Sidebar είναι fixed + position:left:-100% (εκτός οθόνης).
-//    Toggle sidebar.open → slide-in από αριστερά.
-//    Backdrop εμφανίζεται — κλικ πάνω του κλείνει το sidebar.
+//    Sidebar is fixed + position:left:-100% (off-screen).
+//    Toggle sidebar.open → slide-in from the left.
+//    Backdrop is displayed — click on it closes the sidebar.
 
 function setupSidebarToggle() {
   const btn      = document.getElementById('btn-sidebar-toggle');
