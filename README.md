@@ -135,7 +135,8 @@ task-manager-php/
 │   ├── projects/
 │   │   ├── list.php
 │   │   ├── create.php
-│   │   └── delete.php
+│   │   ├── delete.php
+│   │   └── members.php
 │   ├── tasks/
 │   │   ├── list.php
 │   │   ├── create.php
